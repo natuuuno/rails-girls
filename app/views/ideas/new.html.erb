@@ -1,5 +1,9 @@
-<h1>新規投稿</h1>
-
-<%= render 'form', idea: @idea %>
-
-<%= link_to '戻る', ideas_path %>
+<div class="main">
+  <h1>NEW IDEA</h1>
+  <div class="ideas-form">
+    <%= render 'form', idea: @idea %>
+  </div>
+  <div class="back-btn">
+    <%= link_to '戻る', ideas_path %>
+  </div>
+</div>
