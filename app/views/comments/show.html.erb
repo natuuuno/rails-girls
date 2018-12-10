@@ -1,18 +1,19 @@
+<div class="main">
+  <p>
+    <strong>name:</strong>
+    <%= @comment.user_name %>
+  </p>
 
-<p>
-  <strong>name:</strong>
-  <%= @comment.user_name %>
-</p>
+  <p>
+    <strong>body:</strong>
+    <%= @comment.body %>
+  </p>
 
-<p>
-  <strong>body:</strong>
-  <%= @comment.body %>
-</p>
+  <p>
+    <strong>Idea:</strong>
+    <%= @comment.idea_id %>
+  </p>
 
-<p>
-  <strong>Idea:</strong>
-  <%= @comment.idea_id %>
-</p>
-
-<%= link_to '編集', edit_comment_path(@comment) %> |
-<%= link_to '戻る', comments_path %>
+  <%= link_to '編集', edit_comment_path(@comment) %> |
+  <%= link_to '戻る', comments_path %>
+</div>
